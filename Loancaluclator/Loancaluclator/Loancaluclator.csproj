@@ -51,6 +51,8 @@
   <ItemGroup>
     <Compile Include="EducationalLoan.cs" />
     <Compile Include="HomeLoan.cs" />
+    <Compile Include="ILoan.cs" />
+    <Compile Include="Interest.cs" />
     <Compile Include="PersonalLoan.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
