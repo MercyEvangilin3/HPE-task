@@ -45,8 +45,12 @@ namespace Client_WCF_CRUD
 
         protected void btn_insert_Click(object sender, EventArgs e)
         {
+            CRUD.WCFServiceClient client = new CRUD.WCFServiceClient("BasicHttpBinding_IWCFService");
+            
             using (con =new SqlConnection(cs))
             {
+
+            
                 con.Open();
                 cmd = new SqlCommand("spInsertCustomerDetails", con);
                 cmd.CommandType = CommandType.StoredProcedure;
