@@ -42,7 +42,6 @@ namespace CRUDUsingADO.Models
             SqlConnection con = new SqlConnection(cs);
             SqlCommand cmd = new SqlCommand("spAddEmployees", con);
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@EId", emp.EId);
             cmd.Parameters.AddWithValue("@EmpName", emp.EmpName);
             cmd.Parameters.AddWithValue("@DId", emp.DId);
             cmd.Parameters.AddWithValue("@Gender", emp.Gender);

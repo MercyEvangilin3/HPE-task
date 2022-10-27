@@ -6,7 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using WebApplication1.ServiceReference1;
+
 using Ionic.Zip;
 
 namespace WebApplication1
@@ -37,6 +37,7 @@ namespace WebApplication1
         /// <param name="e"></param>
         protected void Button1_Click(object sender, EventArgs e)
         {
+            
             using (var zip = new ZipFile())
             {
                 if(FileUpload1.HasFile)
