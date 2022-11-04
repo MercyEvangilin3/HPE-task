@@ -21,7 +21,7 @@ namespace MultiThreading
             
 
             Caluclator cs = new Caluclator(a,b);
-            Thread t1 = new Thread(cs.Addition);
+            Thread t1 = new Thread(cs.Addition); 
             Thread t2 = new Thread(cs.Subraction);
             Thread t3 = new Thread(cs.Multiplication);
             Thread t4 = new Thread(cs.Division);
